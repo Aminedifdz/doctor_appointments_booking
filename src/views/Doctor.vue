@@ -155,6 +155,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    overflow-y: scroll;
 
     .app__nav {
       position: absolute;
@@ -371,6 +372,7 @@
   transition: opacity 200ms;
   //visibility: hidden;
   opacity: 0.9;
+  height: 100%;
 }
 
 </style>
