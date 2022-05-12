@@ -63,6 +63,92 @@
 
 <style lang="scss" scoped >
 
+
+
+// Styling
+@media screen and (min-width: 500px) { 
+
+    .card-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .card__img {
+            width: 30%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10%;
+            }
+        }
+
+        .card__divider {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 4px;
+            height: 5rem;
+
+            span {
+                position: absolute;
+                bottom: 20%;
+                width: 2px;
+                height: 50%;
+                background: var(--color-primary);
+                opacity: 0.8;
+                box-shadow: var(--box-shadow);
+            }
+        }
+        .card__details {
+            position: relative;
+            color: var(--color-gray-500);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 70%;
+
+            .details__name {
+                color: var(--color-primary);
+                font-size: 0.7rem;
+            }
+            .deatils__option {
+                font-size: 0.7rem;
+            }
+            .details__institut {
+                color: var(--color-gary-100);
+                font-size: 0.8rem;
+            }
+            .details__loaction {
+                font-size: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                flex-wrap: wrap;
+
+                div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                }
+
+                .ratings__stars {
+                    height: 1rem;
+                    padding: 0 ;
+                    
+                }
+                .vue3-star-ratings__wrapper {
+                    padding: 0 ;  
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
+
+}
+
 // FOR MOBILES
 @media screen and (max-width: 500px) { 
 

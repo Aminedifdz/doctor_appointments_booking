@@ -6,6 +6,7 @@
         <div class="app__icon" ><AccountIcon /></div>
       </div>
       <div class="app__main-content" >
+        <div class="main-content__title" >Take an appointment with</div>
         <div v-if="doctor" >
           <div class="app__small-card" >
             <SmallCard :item="doctor" />
@@ -72,7 +73,31 @@
     }
   }
 </script>
+
+<style lang="scss">
+  @media screen and (min-width: 500px) {
+
+  }
+</style>
+
 <style lang="scss" scoped >
+
+// STYLING
+
+@media screen and (min-width: 500px) {
+
+  .app__nav {
+    display: none;
+  }
+
+  .card__actions {
+      display: none;
+    }
+  .container{
+    height: auto;
+  }
+        
+}
 
 // FOR MOBILES
 @media screen and (max-width: 500px) {
@@ -121,6 +146,8 @@
           padding: 0.1rem;
         }
       }
+
+
     }
 
     .app__header {
@@ -180,6 +207,16 @@
           font-size: 0.7rem;
 
       }
+    }
+  }
+
+
+
+  .app__main-content {
+
+    .main-content__title {
+      font-weight: 500;
+      margin-bottom: 1rem;
     }
   }
 

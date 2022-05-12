@@ -121,6 +121,16 @@ export default {
   list-style: none;
 }
 
+// Styling
+@media screen and (min-width: 500px) {
+
+  .app__snack-bar {
+    display: none;
+  }
+
+
+}
+
 
 // FOR MOBILES
 @media screen and (max-width: 500px) {
