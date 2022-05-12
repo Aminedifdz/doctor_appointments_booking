@@ -6,7 +6,7 @@
 
 # DEMO
 
-https://reliable-axolotl-d48d34.netlify.app/
+https://playful-bavarois-369ac7.netlify.app/
 
 ## Project setup
 ```
