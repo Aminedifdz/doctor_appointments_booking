@@ -182,6 +182,14 @@ a {
   cursor: none;
 }
 
+/*   Override Imported Components Styling    */
+.vc-pane-container {
+  .vc-pane,
+  .vc-weeks {
+    min-width: 180px;
+  }
+}
+
 /* route transitions */
 .route-enter-from {
   opacity: 0;

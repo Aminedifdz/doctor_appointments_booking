@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="appointments">
     <div class="container" >
       <div class="app__nav" >
         <router-link :to="route.meta.previous"  ><ArrowLeftIcon  class="app__icon"/></router-link> 
@@ -16,7 +16,7 @@
       </div>
 
       <div class="card__calendar">
-          <button class="calendar__body"><CalendarComponent /></button>
+          <div class="calendar__body"><CalendarComponent /></div>
       </div>
       <div class="card__actions">
           <button class="actions__btn">Prendre rendez-vous</button>
@@ -39,7 +39,7 @@
   import { useRoute } from 'vue-router';
 
   export default {
-    name: 'Home',
+    name: 'appointments',
       components: {
         CalendarComponent,
         ArrowLeftIcon,
@@ -74,12 +74,6 @@
   }
 </script>
 
-<style lang="scss">
-  @media screen and (min-width: 500px) {
-
-  }
-</style>
-
 <style lang="scss" scoped >
 
 // STYLING
@@ -88,6 +82,16 @@
 
   .app__nav {
     display: none;
+  }
+
+  .app__main-content {
+
+    margin-top: 2rem;
+
+    .vc-weeks,
+    .vc-pane {
+      min-width: 180px;
+    }
   }
 
   .card__actions {
@@ -102,7 +106,7 @@
 // FOR MOBILES
 @media screen and (max-width: 500px) {
 
-  .home {
+  .appointments {
     padding: 1rem;
   }
 

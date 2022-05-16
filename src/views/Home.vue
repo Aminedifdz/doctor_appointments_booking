@@ -107,6 +107,7 @@
 
     .app__nav {
       position: fixed;
+      //position: absolute;
       padding: 1rem 0;
       display: flex;
       background: var(--color-primary);
@@ -144,9 +145,11 @@
   }
 
   .app__header {
+    position: fixed;
     display: flex;
     width: 100%;
     margin-top: 1.5rem;
+    //margin-bottom: 2rem;
     z-index: 100;
     justify-content: center;
 
@@ -235,7 +238,7 @@
 
   .app__main-content {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 7rem;
     padding: 1rem 3rem;
     .main-content__body {
 

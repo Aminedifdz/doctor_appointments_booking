@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="doctor">
     <aside>
      <div class="side-bar__title" >Similiar</div>
       <div v-for="item in doctorsSimiliars" :key="item.last_name" class="app__small-card" >
@@ -34,13 +34,13 @@
     </div>
     <div v-if="popup" class="app__modal">
       <CloseIcon @click="popup=false" class="close-icon" />
-      <Appointments  />
+      <Appointments  class="modal__appointments" />
       <div class="modal__actions">
           <button  @click="popup=false" class="actions__btn">Confirmer</button>
       </div>
     </div>
-    <div v-if="popup" @click="popup=false" class="overlay" ></div>
   </div>
+  <div v-if="popup" @click="popup=false" class="overlay" ></div>
 </template>
 
 <script>
@@ -61,7 +61,7 @@
   import { useRoute } from 'vue-router';
 
   export default {
-    name: 'Home',
+    name: 'doctor',
       components: {
         CloseIcon,
         ArrowLeftIcon,
@@ -120,7 +120,7 @@
 
 @media screen and (min-width: 500px) {
 
-  .home {
+  .doctor {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -222,7 +222,7 @@
     display: none;
   }
 
-  .home {
+  .doctor {
     padding: 1rem;
   }
 
@@ -318,10 +318,11 @@
 .app__modal {
   position: absolute;
   //display: none;
-  top: 20%;
+  top: 5%;
   left: 30%;
-  width: 35%;
-  height: auto;
+  //min-width: 35%;
+  width: 40%;
+  //height: auto;
   background: var(--color-white);
   box-shadow: 0 2rem 3rem var(--color-gray-500);
   display: flex;
@@ -329,6 +330,12 @@
   align-items: center;
   border-radius: 10px;
   z-index: 100;
+
+  .appointment {
+    .app__main-content {
+      margin-top: 2rem;
+    }
+  }
 
   .modal__actions {
       display: flex;
@@ -346,6 +353,11 @@
 
       }
     }
+
+
+  @media screen and (max-width:500px) {
+    display: none;
+  }
 }
 
 .close-icon {
@@ -372,7 +384,12 @@
   transition: opacity 200ms;
   //visibility: hidden;
   opacity: 0.9;
-  height: 100%;
+  //height: 100%;
+  //height: 100vh;
+
+  @media screen and (max-width:500px) {
+    display: none;
+  }
 }
 
 </style>

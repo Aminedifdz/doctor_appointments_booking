@@ -49,7 +49,7 @@ export default {
 
 .app__date-picker  {
   width: 100%;
-  border: none;
+  border: none;  
 }
 
 </style>
