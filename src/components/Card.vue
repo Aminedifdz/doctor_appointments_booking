@@ -237,6 +237,7 @@
                     justify-content: space-between;
                     align-items: center;
                     gap: 0.3rem;
+                    width: 100%;
                     .tube__number {
                         color: var(--color-primary);
                         font-size: 0.7rem;
@@ -389,6 +390,7 @@
                     justify-content: space-between;
                     align-items: center;
                     gap: 0.3rem;
+                    width: 100%;
                     .tube__number {
                         color: var(--color-primary);
                         font-size: 0.7rem;

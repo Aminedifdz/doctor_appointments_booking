@@ -183,12 +183,16 @@ a {
 }
 
 /*   Override Imported Components Styling    */
-.vc-pane-container {
+/*.vc-pane-container {
   .vc-pane,
   .vc-weeks {
-    min-width: 180px;
+    min-width: 150px;
   }
-}
+
+  .vc-weeks {
+    padding: 5px 0;
+  }
+}*/
 
 /* route transitions */
 .route-enter-from {

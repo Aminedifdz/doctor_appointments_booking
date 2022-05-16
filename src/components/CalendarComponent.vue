@@ -53,3 +53,17 @@ export default {
 }
 
 </style>
+<style lang="scss">
+
+.vc-pane-container {
+  .vc-pane,
+  .vc-weeks {
+    min-width: 150px;
+  }
+
+  .vc-weeks {
+    padding: 5px 0;
+  }
+}
+
+</style>

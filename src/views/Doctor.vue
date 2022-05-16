@@ -322,6 +322,7 @@
   left: 30%;
   //min-width: 35%;
   width: 40%;
+  min-width: 20rem;
   //height: auto;
   background: var(--color-white);
   box-shadow: 0 2rem 3rem var(--color-gray-500);

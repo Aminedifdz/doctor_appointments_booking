@@ -28,7 +28,8 @@
     background: var(--color-gray-500);
     height: 4px;
     border-radius: 10px;
-    width: 150px;
+    //width: 150px;
+    width: 100%;
 
     .chart-container__amount {
         background: var(--color-primary); 
